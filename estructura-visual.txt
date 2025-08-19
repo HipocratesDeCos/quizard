@@ -1,0 +1,74 @@
+# ESTRUCTURA VISUAL DE CARPETAS - QUIZZES EDUCATIVOS
+
+quizzes-educativos/
+│
+├── 📋 ARCHIVOS DE CONFIGURACIÓN
+│   ├── README.md
+│   ├── package.json
+│   ├── pnpm-lock.yaml
+│   ├── index.html
+│   ├── vite.config.ts
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   ├── eslint.config.js
+│   ├── components.json
+│   ├── tsconfig.json
+│   ├── tsconfig.app.json
+│   └── tsconfig.node.json
+│
+├── 📁 public/ (ARCHIVOS ESTÁTICOS)
+│   ├── codigo.json ⭐ (TU CONTENIDO AQUÍ)
+│   ├── quiz-icon.svg
+│   └── use.txt
+│
+├── 📁 src/ (CÓDIGO FUENTE)
+│   │
+│   ├── 🎯 ARCHIVOS PRINCIPALES
+│   │   ├── main.tsx
+│   │   ├── App.tsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── vite-env.d.ts
+│   │
+│   ├── 📁 components/ (COMPONENTES REACT)
+│   │   ├── MateriasHome.tsx      # Página principal
+│   │   ├── TemasLista.tsx        # Lista de temas
+│   │   ├── Quiz.tsx              # Sistema de quiz
+│   │   ├── SaberMasModal.tsx     # Modal "Saber más"
+│   │   ├── LoadingSpinner.tsx    # Spinner carga
+│   │   ├── ErrorMessage.tsx      # Mensajes error
+│   │   └── ErrorBoundary.tsx     # Manejo errores
+│   │
+│   ├── 📁 hooks/ (CUSTOM HOOKS)
+│   │   ├── useQuizData.ts        # Datos quiz
+│   │   └── use-mobile.tsx        # Detección móvil
+│   │
+│   ├── 📁 types/ (TIPOS TYPESCRIPT)
+│   │   └── index.ts              # Tipos principales
+│   │
+│   └── 📁 lib/ (UTILIDADES)
+│       └── utils.ts              # Funciones utiles
+│
+└── 📁 dist/ (BUILD DE PRODUCCIÓN)
+    ├── index.html
+    ├── codigo.json
+    ├── quiz-icon.svg
+    └── assets/
+        ├── index-BUU57za1.js
+        └── index-B4mtX8k6.css
+
+===============================================
+🎯 ARCHIVO CLAVE PARA TI: public/codigo.json
+===============================================
+
+Este es el único archivo que necesitas modificar
+para agregar tu contenido educativo.
+
+Estructura JSON:
+- materias
+  - temas
+    - introducción
+    - preguntas
+      - opciones (1-4 correctas)
+      - saber_mas (contenido modal)
+===============================================
